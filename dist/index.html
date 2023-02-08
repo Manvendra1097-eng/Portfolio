@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manvendra's Portfolio</title>
     
-    <script type="module" crossorigin src="/assets/index-14f6cd0d.js"></script>
-    <link rel="stylesheet" href="/assets/index-5650a6aa.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <script type="module" crossorigin src="/assets/index-79815dd1.js"></script>
+    <link rel="stylesheet" href="/assets/index-2b663005.css">
   </head>
   <body class="bg-blue-100">
     <header class="p-2">
       <nav
-        class="flex flex-col text-center md:flex-row md:space-x-2 md:justify-end md:items-center m-auto md:pr-12"
+        class="flex justify-end space-x-2 hidden md:block md:ml-auto md:w-fit md:py-2 md:pr-3"
       >
         <a
           class="px-3 py-2 bg-blue-100 rounded-lg my-1 shadow-lg shadow-blue-200 font-semibold text-blue-900 hover:bg-blue-200"
@@ -32,6 +33,33 @@
           >Contact me</a
         >
       </nav>
+      <!-- mobile nav -->
+      <nav
+        class="absolute top-0 left-0 h-screen hidden w-screen bg-white flex flex-col space-y-8 m-nav"
+      >
+        <a
+          class="px-3 py-2 bg-blue-100 rounded-lg my-1 shadow-lg shadow-blue-200 font-semibold text-blue-900 hover:bg-blue-200"
+          href="#aboutme"
+          >About me</a
+        ><a
+          class="px-3 py-2 bg-blue-100 rounded-lg my-1 shadow-lg shadow-blue-200 font-semibold text-blue-900 hover:bg-blue-200"
+          href="#qualification"
+          >Qualification</a
+        ><a
+          class="px-3 py-2 bg-blue-100 rounded-lg my-1 shadow-lg shadow-blue-200 font-semibold text-blue-900 hover:bg-blue-200"
+          href="#technology"
+          >Technology</a
+        ><a
+          class="px-3 py-2 bg-blue-100 rounded-lg my-1 shadow-lg shadow-blue-200 font-semibold text-blue-900 hover:bg-blue-200"
+          href="#contactme"
+          >Contact me</a
+        >
+      </nav>
+      <button
+        class="ml-auto block md:hidden bg-blue-200 px-2 py-1 rounded-md text-gray-400 shadow-sm hover:shadow-md transition-all duration-100 m-btn"
+      >
+        Menu
+      </button>
     </header>
     <main class="container m-auto">
       <!-- main section -->
