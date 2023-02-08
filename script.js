@@ -3,6 +3,7 @@ const dynamic_text = document.getElementById("dynamic-text");
 const paraes = ["Software Engineer...", "Developer...", "Pragrammer..."];
 
 const m_btn = document.querySelector(".m-btn");
+const c_btn = document.querySelector(".c-btn");
 const m_nav = document.querySelector(".m-nav");
 
 // pointer to track para character
@@ -48,7 +49,6 @@ printPara(paraes[paraIndex]);
 // close menu
 
 const closeMenu = () => {
-  console.log("closed");
   m_nav.classList.remove("block");
   m_nav.classList.add("hidden");
 };
@@ -58,4 +58,13 @@ m_navs.forEach((nav) => nav.addEventListener("click", closeMenu));
 m_btn.addEventListener("click", () => {
   m_nav.classList.remove("hidden");
   m_nav.classList.add("block");
+  m_btn.classList.add("hidden");
+  c_btn.classList.remove("hidden");
+});
+
+c_btn.addEventListener("click", () => {
+  m_nav.classList.add("hidden");
+  m_nav.classList.remove("block");
+  m_btn.classList.remove("hidden");
+  c_btn.classList.add("hidden");
 });
