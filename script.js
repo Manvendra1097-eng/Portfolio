@@ -51,6 +51,8 @@ printPara(paraes[paraIndex]);
 const closeMenu = () => {
   m_nav.classList.remove("block");
   m_nav.classList.add("hidden");
+  m_btn.classList.remove("hidden");
+  c_btn.classList.add("hidden");
 };
 const m_navs = Array.from(m_nav.children);
 m_navs.forEach((nav) => nav.addEventListener("click", closeMenu));
