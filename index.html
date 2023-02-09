@@ -7,11 +7,17 @@
     <title>Manvendra's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-blue-100">
+  <body class="bg-blue-100 font-poppins">
     <header class="p-2">
       <nav
-        class="flex justify-end space-x-2 hidden md:block md:ml-auto md:w-fit md:py-2 md:pr-3"
+        class="md:flex md:justify-end md:space-x-2 hidden md:ml-auto md:w-fit md:py-2 md:pr-3"
       >
         <a
           class="px-3 py-2 bg-blue-100 rounded-lg my-1 shadow-lg shadow-blue-200 font-semibold text-blue-900 hover:bg-blue-200"
@@ -34,25 +40,27 @@
       <!-- mobile nav -->
 
       <nav
-        class="absolute top-12 left-0 h-1/2 pr-2 hidden md:hidden w-full bg-blue-50 rounded-lg shadow flex flex-col space-y-8 m-nav"
+        class="absolute top-12 left-0 h-[45%] pr-2 hidden md:hidden w-full bg-blue-50 rounded-lg shadow m-nav"
       >
-        <a
-          class="px-3 py-2 bg-blue-100 rounded-lg my-1 shadow-lg shadow-blue-200 font-semibold text-blue-900 hover:bg-blue-200"
-          href="#aboutme"
-          >About me</a
-        ><a
-          class="px-3 py-2 bg-blue-100 rounded-lg my-1 shadow-lg shadow-blue-200 font-semibold text-blue-900 hover:bg-blue-200"
-          href="#qualification"
-          >Qualification</a
-        ><a
-          class="px-3 py-2 bg-blue-100 rounded-lg my-1 shadow-lg shadow-blue-200 font-semibold text-blue-900 hover:bg-blue-200"
-          href="#technology"
-          >Technology</a
-        ><a
-          class="px-3 py-2 bg-blue-100 rounded-lg my-1 shadow-lg shadow-blue-200 font-semibold text-blue-900 hover:bg-blue-200"
-          href="#contactme"
-          >Contact me</a
-        >
+        <div class="flex flex-col justify-center items-center mx-2 space-y-4">
+          <a
+            class="px-3 py-2 bg-blue-100 rounded-lg w-full my-1 shadow-lg shadow-blue-200 font-semibold text-blue-900 hover:bg-blue-200"
+            href="#aboutme"
+            >About me</a
+          ><a
+            class="px-3 py-2 bg-blue-100 rounded-lg w-full my-1 shadow-lg shadow-blue-200 font-semibold text-blue-900 hover:bg-blue-200"
+            href="#qualification"
+            >Qualification</a
+          ><a
+            class="px-3 py-2 bg-blue-100 rounded-lg w-full my-1 shadow-lg shadow-blue-200 font-semibold text-blue-900 hover:bg-blue-200"
+            href="#technology"
+            >Technology</a
+          ><a
+            class="px-3 py-2 bg-blue-100 rounded-lg w-full my-1 shadow-lg shadow-blue-200 font-semibold text-blue-900 hover:bg-blue-200"
+            href="#contactme"
+            >Contact me</a
+          >
+        </div>
       </nav>
       <button
         class="absolute right-1 top-1 md:hidden bg-blue-200 px-2 py-1 rounded-md text-gray-400 shadow-sm hover:shadow-md transition-all duration-100 m-btn"
@@ -80,7 +88,7 @@
           >
             Hi, I'm Manvendra
           </h1>
-          <p class="text-xl text-red-500 text-center font-mono font-semibold">
+          <p class="text-xl text-red-500 text-center font-semibold">
             I am <span id="dynamic-text" class="text-blue-600"></span>
           </p>
         </div>
@@ -107,7 +115,7 @@
           <h2 class="font-bold text-lg text-center m-2">About me</h2>
 
           <div
-            class="text-lg tracking-tight leading-8 text-gray-500 text-justify font-serif bg-blue-200 p-4 rounded-md shadow-lg"
+            class="text-lg leading-8 text-gray-500 text-justify bg-blue-200 p-4 rounded-md shadow-lg"
           >
             <p>
               I am engineer having 3 years of experience.A highly motivated and

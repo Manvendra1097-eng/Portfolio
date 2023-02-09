@@ -1,6 +1,6 @@
 const dynamic_text = document.getElementById("dynamic-text");
 
-const paraes = ["Software Engineer...", "Developer...", "Pragrammer..."];
+const paraes = ["Software Engineer...", "Developer...", "Programmer..."];
 
 const m_btn = document.querySelector(".m-btn");
 const c_btn = document.querySelector(".c-btn");
